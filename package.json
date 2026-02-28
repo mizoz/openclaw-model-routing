@@ -1,0 +1,41 @@
+{
+  "name": "openclaw-model-routing",
+  "version": "1.0.0",
+  "description": "Auto Model Routing for OpenClaw - Intelligent model selection based on task detection using Alibaba/Bailian models",
+  "main": "src/index.js",
+  "bin": {
+    "omr": "./bin/omr.js"
+  },
+  "scripts": {
+    "start": "node bin/omr.js",
+    "detect": "node bin/omr.js detect",
+    "lookup": "node bin/omr.js lookup",
+    "config": "node bin/omr.js config",
+    "health": "node bin/omr.js health",
+    "interactive": "node bin/omr.js interactive"
+  },
+  "keywords": [
+    "openclaw",
+    "model-routing",
+    "bailian",
+    "alibaba",
+    "ai-models",
+    "cli"
+  ],
+  "author": "mizoz",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mizoz/openclaw-model-routing"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "dotenv": "^16.3.1",
+    "inquirer": "^8.2.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
